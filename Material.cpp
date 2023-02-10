@@ -127,6 +127,7 @@ void Material::LoadTexture(
 	  cpuDescHandleSRV);
 }
 
+
 void Material::Update() {
 	// 定数バッファへデータ転送
 	constMap->ambient = ambient;

@@ -242,6 +242,8 @@ void Model::Initialize(const std::string& modelname) {
 	LoadTextures();
 }
 
+
+
 void Model::LoadMaterial(const std::string& directoryPath, const std::string& filename) {
 	// ファイルストリーム
 	std::ifstream file;
@@ -380,6 +382,7 @@ void Model::LoadTextures() {
 		textureIndex++;
 	}
 }
+
 
 void Model::Draw(ID3D12GraphicsCommandList* cmdList) {
 	// デスクリプタヒープの配列
