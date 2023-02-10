@@ -50,6 +50,10 @@ class GameScene {
 	/// </summary>
 	void Draw();
 
+	int CollisionSphere(Object3d* object, XMFLOAT3 ground);
+
+	XMFLOAT3 AddXMFLOAT3(XMFLOAT3 a, XMFLOAT3 b);
+
   private: // メンバ変数
 	DirectXCommon* dxCommon = nullptr;
 	Input* input = nullptr;

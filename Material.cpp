@@ -50,7 +50,7 @@ void Material::LoadTexture(
   CD3DX12_GPU_DESCRIPTOR_HANDLE gpuHandle) {
 	// テクスチャなし
 	if (textureFilename.size() == 0) {
-		textureFilename = "purin.jpg";
+		textureFilename = "white1x1.png";
 	}
 
 	cpuDescHandleSRV = cpuHandle;
@@ -126,6 +126,7 @@ void Material::LoadTexture(
 	  &srvDesc,      //テクスチャ設定情報
 	  cpuDescHandleSRV);
 }
+
 
 void Material::Update() {
 	// 定数バッファへデータ転送
